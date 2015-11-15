@@ -29,7 +29,10 @@ def dec2bin(num):
     # multiples of 2
     if num == 0:
         return str(0)
-    elif is_power_of_2(num):
+    # option using helper function (below)
+    # elif is_power_of_2(num):
+    # option using built-in method .is_integer() (below)
+    elif (log(num)%log(2)).is_integer():
         return str(10**int(log(num)/log(2)))
     elif num % 2 != 0:
         # odd numbers
