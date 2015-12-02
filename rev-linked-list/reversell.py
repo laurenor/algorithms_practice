@@ -35,7 +35,6 @@ def reverse_linked_list(head):
     '321'
     """
     reversed_head = None
-    current = None
     original_head = head
 
     while original_head:
